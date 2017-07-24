@@ -5,3 +5,4 @@
 
 
 # Will add more scripting to complete gemfile install and generate config
+# --template=/path/to/rails_template.rb

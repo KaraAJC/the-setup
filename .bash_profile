@@ -51,3 +51,11 @@ alias dotfile="subl ~/.bash_profile"
 alias savedotfile="source ~/.bash_profile"
 alias pgrestart="rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8 && pg_ctl -D /usr/local/var/postgres -l logfile start"
 alias whatamasi="say 'Today is $(date)'"
+alias be="bundle exec"
+alias desktop="cd ~/Desktop"
+alias ghdir='git status && git add . && git commit -m"adds github system folder" && git push origin master'
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

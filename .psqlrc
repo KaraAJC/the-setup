@@ -1,2 +1,11 @@
-\x auto
+-- Use a unique history file for every database
+\set HISTFILE ~/.psql_history-:DBNAME
+
+-- Print nulls as something meaningful for reading
+\pset null ☠️
+
+-- Time everything
 \timing
+
+-- Display results configuration
+\x auto

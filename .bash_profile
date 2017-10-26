@@ -44,6 +44,12 @@ export LSCOLORS=ExGxFxdxCxDxDxaccxaeex
 # Force ls to use colors (G) and use humanized file sizes (h)
 alias ls='ls -Gh'
 
+# Set sublime as the default editor
+which -s subl && export EDITOR="subl --wait"
+
+# Silences Warnings when running RSPEC
+export RUBYOPT="-W0" rspec
+
 ## ALIASES ###
 
 alias gitlog="git log --all --decorate --oneline --graph"
@@ -53,8 +59,10 @@ alias pgrestart="rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgre
 alias whatamasi="say 'Today is $(date)'"
 alias be="bundle exec"
 alias desktop="cd ~/Desktop"
-alias ghdir='git status && git add . && git commit -m"adds github system folder" && git push origin master'
+alias ghdir='mkdir .github && touch PR_TEMPLATE.md && touch ISSUE_TEMPLATE.md && git status && git add . && git commit -m"adds github system folder" && git push origin master'
 alias reveal='defaults write com.apple.Finder AppleShowAllFiles TRUE;killall Finder'
+alias weather="curl wttr.in"
+alias til="cd ~/Projects/kara_codes && be jekyll draft 'til CHANGEME -  $(date)' && subl ."
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

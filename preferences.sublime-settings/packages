@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Babel Snippets",
+		"BracketGuard",
+		"BracketHighlighter",
+		"Emmet",
+		"ESLint",
+		"HTMLBeautify",
+		"Markdown Extended",
+		"MarkdownLivePreview",
+		"Package Control",
+		"RSpec",
+		"RuboCop"
+	]
+}

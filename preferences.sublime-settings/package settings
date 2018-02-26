@@ -1,0 +1,6 @@
+//RuboCop settings
+{
+  "check_for_rvm": false,
+  "check_for_rbenv": true,
+  "rbenv_path":  "/usr/local/bin/rbenv" // The path to your rbenv's binary. Run `which rbenv` to get it.
+}

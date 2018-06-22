@@ -1,13 +1,13 @@
 # Installfest
 
-So, you got yourself a new laptop, eh? Good for you! lets have an installfest party!
+# So, you got yourself a new laptop, eh? Good for you! lets have an installfest party!
 
 ## What we'll cover
 1. xcode!
 2. System Updates
+1. Understanding the Unix Environment
 3. Dotfiles
 1. `subl`
-1. Understanding the Unix Environment
 1. Homebrew
 1. sqlite3
 1. postgres
@@ -15,7 +15,24 @@ So, you got yourself a new laptop, eh? Good for you! lets have an installfest pa
 1. Ruby
 1. gems
 
-## `subl`
+### XCode!
+A big part of your development environment is knowing your Mac's command Line Tools is all run through **XCode**. To keep this updated, you can run:
+```sh
+xcode-select --install
+```
+or, go to your **App Store** updates and confirm that it is updated. your first encounter with this application, it may prompt you to enter your user credentials, and that will help you have the access you need to do the rest of your installs. 
+
+if you run the above line and get the following message: 
+```sh
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+```
+hooray! Your XCode is updated!
+
+### System Updates
+
+Typically a laptop will ship with whatever the updates were at the time the computer was made, this means there will surely be updates that have happened since then. Use the **App Store** to make all the software updates before moving forward.
+
+### `subl`
 
 This is a command that allows you to open a file or directory in your Sublime Text code editor from the command line. After installing Sublime Text 3 from the website and putting it in your applications folder, run the following command:
 

@@ -1,3 +1,9 @@
+export PATH=/usr/local/bin:$PATH
+
+# Upgrading to mojave and trying to use mysql2, openssl needed to be reinstalled
+# per: https://github.com/brianmario/mysql2/issues/795#issuecomment-337006164
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
 # Use RBENV for ruby
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
   
@@ -66,6 +72,8 @@ alias weather="curl wttr.in"
 alias rawr='fortune -s computers | cowsay -f moose | lolcat -i'
 alias whh="git log -1 | cowsay -f dragon-and-cow | lolcat" #What Had Happened...
 alias til="cd ~/Projects/kara_codes && be jekyll draft 'til CHANGEME -  $(date)' && subl ."
+alias gitbranches="git for-each-ref --sort=-committerdate refs/heads/  | head"
+alias prunebranches="git remote prune origin && git branch -v | grep '\[gone\]' | awk '{print $1}' | xargs git branch -D"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
